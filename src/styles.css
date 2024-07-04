@@ -1,0 +1,80 @@
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(90deg, #0400ff, #f06595);
+    color: #fff;
+  }
+  
+  .navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-brand:hover {
+    color: #ffe66d !important;
+  }
+  
+  /* Container Styling */
+  .container {
+    margin-top: 2rem;
+  }
+  
+  /* Dropdown Styling */
+  .form-group label {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .form-control {
+    border: 2px solid #0400ff;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #0400ff;
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+  }
+  
+  /* Table Styling */
+  .table {
+    margin-top: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .table thead {
+    background: #0400ff;
+    color: #fff;
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background: #ffe6e6;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background: #ffd6d6;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .form-group label {
+      font-size: 1rem;
+    }
+  
+    .table th, .table td {
+      font-size: 0.8rem;
+    }
+  }
+  

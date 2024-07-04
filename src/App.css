@@ -1,38 +1,113 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
 .App {
   text-align: center;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 60px; /* Adjust for the navbar */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #007bff;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+select {
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+select:hover, select:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
   color: white;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+tr:hover {
+  background-color: #e9ecef;
+}
+
+td {
+  color: #495057;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  table, th, td {
+    display: block;
+    width: 100%;
   }
+
+  th, td {
+    padding: 10px;
+  }
+
+  th {
+    background-color: #343a40;
+  }
+}
+
+/* Add this at the end of the file */
+
+.btn-primary {
+  background-color: #f06595;
+  border-color: #f06595;
+}
+
+.btn-primary:hover {
+  background-color: #ff6b6b;
+  border-color: #ff6b6b;
 }
